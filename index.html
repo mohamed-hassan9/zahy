@@ -1,0 +1,705 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>زاهي للاثاث</title>
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- custom css file linke -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header section starts -->
+  <header class="header">
+    <a href="#home" class="logo"><i class="fas fa-lightbulb"></i>زاهي</a>
+
+    <form action="" class="search-form">
+      <input style="direction: rtl;" type="search" placeholder="تبحث عن شئ؟" id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+      <div id="cart-btn" class="fas fa-shopping-cart"></div>
+      <div id="login-btn" class="fas fa-user"></div>
+    </div>
+  </header>
+  <!-- header section ends -->
+
+  <!-- closer btn -->
+  <div id="closer" class="fas fa-times"></div>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <a href="#home">الرئيسية</a>
+    <a href="#about">نبذة عنا</a>
+    <a href="#shop">المتجر</a>
+    <a href="#team">الفريق</a>
+    <a href="#blog">المدونه</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+
+  <div class="shopping-cart">
+    
+    <div class="box">
+      <i class="fas fa-times"></i>
+      <img src="image/cart-img-1.jpg" alt="">
+      <div class="content">
+        <h3>اثاث حديث</h3>
+        <span class="quantity"> 1 </span>
+        <span class="multiplay"> x </span>
+        <span class="price"> $140.00 </span>
+      </div>
+    </div>
+    
+    <div class="box">
+      <i class="fas fa-times"></i>
+      <img src="image/cart-img-2.jpg" alt="">
+      <div class="content">
+        <h3>مقاعد حديثه</h3>
+        <span class="quantity"> 1 </span>
+        <span class="multiplay"> x </span>
+        <span class="price"> $140.00 </span>
+      </div>
+    </div>
+    
+    <div class="box">
+      <i class="fas fa-times"></i>
+      <img src="image/cart-img-3.jpg" alt="">
+      <div class="content">
+        <h3>مصممه لاجلك</h3>
+        <span class="quantity"> 1 </span>
+        <span class="multiplay"> x </span>
+        <span class="price"> $140.00 </span>
+      </div>
+    </div>
+    
+    <div class="box">
+      <i class="fas fa-times"></i>
+      <img src="image/cart-img-4.jpg" alt="">
+      <div class="content">
+        <h3>تصميم مبتكر</h3>
+        <span class="quantity"> 1 </span>
+        <span class="multiplay"> x </span>
+        <span class="price"> $140.00 </span>
+      </div>
+    </div>
+
+    <h3 class="total"> الكلي : <span> $560.00 </span></h3>
+  </div>
+
+  <!-- login form  -->
+  <div class="login-form">
+    <form action="">
+      <h3 style="text-align: center;">نموذج التسجيل</h3>
+      <input style="direction: rtl;" type="email" placeholder="ادخل البريد الالكتروني" class="box">
+      <input style="direction: rtl;" type="password" placeholder="ادخل الرقم السري" class="box">
+      <div class="remember">
+        <input type="checkbox" name="" id="remember-me">
+        <label for="remember-me">اضغط لإكمال التسجيل</label>
+      </div>
+      <input type="submit" value="سجل الان" class="btn">
+      <p>نسيت الرقم السري<a href="#">  اضغط هنا</a></p>
+      <p>لا تمتلك حساب اضغط هنا ؟ <a href="#">انشاء الان</a></p>
+    </form>
+  </div>
+
+  <!-- home section starts  -->
+  <section class="home" id="home">
+    <div class="slides-container">
+
+      <div class="slide active">
+        <div class="content">
+          <span>وصل حديثا</span>
+          <h3>كرسي عالي الجودة</h3>
+          <p>مريح وناعم</p>
+          <a href="#" class="btn">تسوق الان</a>
+        </div>
+        <div class="image">
+          <img src="image/home-img-1.png" alt="">
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <span>وصل حديثا</span>
+          <h3>تصميم عصري ومبتكر</h3>
+          <p>كرسي ذو جودة ممتازة والوان جذابة</p>
+          <a href="#" class="btn">تسوق الان</a>
+        </div>
+        <div class="image">
+          <img src="image/home-img-2.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <div id="slide-next" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="slide-prev" class="fas fa-angle-left" onclick="prev()"></div>
+  </section>
+  <!-- home section ends -->
+
+  <!-- banner section starts  -->
+  <section class="banner-container">
+
+    <div class="banner">
+      <img src="image/banner-1.jpg" alt="">
+      <div class="content">
+        <span>عرض  لفترة محدودة</span>
+        <h3>يصل الي خصم %50 </h3>
+        <a href="#" class="btn">تسوق الان</a>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="image/banner-2.jpg" alt="">
+      <div class="content">
+        <span>عرض  لفترة محدودة</span>
+        <h3>يصل الي خصم %50 </h3>
+        <a href="#" class="btn">تسوق الان</a>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="image/banner-3.jpg" alt="">
+      <div class="content">
+        <span>عرض  لفترة محدودة</span>
+        <h3>يصل الي خصم %50 </h3>
+        <a href="#" class="btn">تسوق الان</a>
+      </div>
+    </div>
+
+  </section>
+  <!-- banner section ends -->
+  <!-- start about section -->
+  <section class="heading">
+    <h3>نبذه عنا</h3>
+    <p><a href="#home">الرئيسية</a> / <span>نبذه عنا</span></p>
+  </section>
+  <section class="about" id="about">
+    <div class="img">
+      <img src="/image/about img.jpg" alt="">
+    </div>
+    <div class="content">
+      <h2>مجموعة زاهي للاثاث</h2>
+      <p>زاهي جروب هو اسم له تاريخ في عالم الأثاث لأكثر من 30 عاما ،نقوم باستخدام اجود انواع الاخشاب ولدينا فريق ضخم لاختيار اجود الخامات والالوان</p>
+    </div>
+
+  </section>
+
+  <!-- end about section -->
+  <!-- SHOP section STARTS -->
+  <section class="heading">
+    <h3>متجرنا</h3>
+    <p><a href="#home">الرئيسية</a> / <span>المتجر</span></p>
+  </section>
+
+  <section class="category" id="shop">
+
+    <h1 class="title"><span>اقسامنا</span><a href="#">عرض الكل</a></h1>
+
+    <div class="box-container">
+        <a href="#" class="box">
+          <img src="image/icon-1.png" alt="">
+          <h3>غرفة المعيشة</h3>
+        </a>
+
+        <a href="#" class="box">
+          <img src="image/icon-2.png" alt="">
+          <h3>المكتب</h3>
+        </a>
+
+        <a href="#" class="box">
+          <img src="image/icon-3.png" alt="">
+          <h3>كومودينو</h3>
+        </a>
+
+        <a href="#" class="box">
+          <img src="image/icon-4.png" alt="">
+          <h3>كرسي</h3>
+        </a>
+
+        <a href="#" class="box">
+          <img src="image/icon-5.png" alt="">
+          <h3>دولاب</h3>
+        </a>
+
+    </div>
+  </section>
+  <section class="products">
+    <h1 class="title"><span>منتجاتنا</span><a href="#">عرض الكل</a></h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="image/product-1.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="price">$140.0</div>
+          <h3>اباجورة</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50) </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="image/product-2.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="price">$140.0</div>
+          <h3>انترية</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50) </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="image/product-3.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="price">$140.0</div>
+          <h3>كومودينو</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50) </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="image/product-4.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="price">$140.0</div>
+          <h3>كرسي مبتكر</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50) </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="image/product-5.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="price">$140.0</div>
+          <h3>كرسي زان</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50) </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="image/product-6.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="price">$140.0</div>
+          <h3>نجف</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50) </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="image/product-7.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="price">$140.0</div>
+          <h3>كرسي دائرى</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50) </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="image/product-8.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="price">$140.0</div>
+          <h3>مقعد سادة</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span> (50) </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!-- SHOP section ends-->
+ <!-- team section starts-->
+  <section class="heading">
+    <h3>فريقنا</h3>
+    <p><a href="#home">الرئيسية</a> / <span>فريقنا</span></p>
+  </section>
+
+  <section class="team" id="team">
+
+    <h1 class="title"><span>فريقنا</span> <a href="#">عرض الكل</a></h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="image">
+          <img src="image/team-6.jpg" alt="">
+        </div>
+        <div class="user">
+          <h3>احمد علاء </h3>
+          <span>مصمم</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="image">
+          <img src="image/team-2.jpg" alt="">
+        </div>
+        <div class="user">
+          <h3>صلاح امين </h3>
+          <span>مصمم</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="image">
+          <img src="image/person.jpg" alt="">
+        </div>
+        <div class="user">
+          <h3>زياد فريد</h3>
+          <span>مصمم</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="image">
+          <img src="image/team-4.jpg" alt="">
+        </div>
+        <div class="user">
+          <h3>ناصر علي</h3>
+          <span>مصمم</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="image">
+          <img src="image/person2.jpg" alt="">
+        </div>
+        <div class="user">
+          <h3>علي زين</h3>
+          <span>منسق الوان</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="image">
+          <img src="image/person3.jpg" alt="">
+        </div>
+        <div class="user">
+          <h3>يوسف علاء</h3>
+          <span>مصمم</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!--team section ends-->
+<!-- blog section starts-->
+  <section class="heading">
+    <h3>المدونه</h3>
+    <p><a href="#home">الرئيسية</a> / <span>المدونه</span></p>
+  </section>
+
+  <section class="blog" id="blog">
+    <h1 class="title"><span>المدونه</span><a href="#">عرض الكل</a></h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="image">
+          <img src="image/blog-1.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>كرسي بتصميم عبقري</h3>
+          <p>الوافدون الجدد بتصميم فريد ومختلف يناسب الجميع ، بإستخدام خامات ممتازة والوان عصريه</p>
+          <a href="#" class="btn">اقرأ المزيد</a>
+          <div class="icons">
+            <a href="#"><i class="fas fa-calender"></i> 4st سبتمبر, 2023 </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="image/blog-2.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>أريكة بتصميم ممتاز</h3>
+          <p>الوافدون الجدد بتصميم فريد ومختلف يناسب الجميع ، بإستخدام خامات ممتازة والوان عصرية</p>
+          <a href="#" class="btn">اقرأ المزيد</a>
+          <div class="icons">
+            <a href="#"><i class="fas fa-calender"></i> 4st سبتمبر, 2023</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="image/blog-3.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>حوض استحمام بتصميم كلاسيكي</h3>
+          <p>الوافدون الجدد بتصميم فريد ومختلف يناسب الجميع ، بإستخدام خامات ممتازة والوان عصرية</p>
+          <a href="#" class="btn">اقرأ المزيد</a>
+          <div class="icons">
+            <a href="#"><i class="fas fa-calender"></i> 4st سبتمبر, 2023</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="image/blog-4.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>غرفة معيشة بتصميم جذاب</h3>
+          <p>الوافدون الجدد بتصميم فريد ومختلف يناسب الجميع ، بإستخدام خامات ممتازة والوان عصرية</p>
+          <a href="#" class="btn">اقرأ المزيد</a>
+          <div class="icons">
+            <a href="#"><i class="fas fa-calender"></i> 4st سبتمبر, 2023</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="image/blog-5.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>كرسي بتصميم حديث</h3>
+          <p>الوافدون الجدد بتصميم فريد ومختلف يناسب الجميع ، بإستخدام خامات ممتازة والوان عصرية</p>
+          <a href="#" class="btn">اقرأ المزيد</a>
+          <div class="icons">
+            <a href="#"><i class="fas fa-calender"></i> 4st سبتمبر, 2023</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="image/blog-6.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>أريكة بتصميم عصري</h3>
+          <p>الوافدون الجدد بتصميم فريد ومختلف يناسب الجميع ، بإستخدام خامات ممتازة والوان عصرية</p>
+          <a href="#" class="btn">اقرأ المزيد</a>
+          <div class="icons">
+            <a href="#"><i class="fas fa-calender"></i> 4st سبتمبر, 2023</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- blog section ends-->
+  <!-- contact section starts-->
+  <section class="heading">
+    <h3>اتصل بنا</h3>
+    <p><a href="#home">الرئيسية</a> / <span>اتصل بنا</span></p>
+  </section>
+
+  <div class="contact" id="contact">
+    <form style="direction: rtl;" action="">
+      <h3>ابقى على تواصل</h3>
+      <span>الاسم</span>
+      <input type="text" name="" id="" class="box">
+      <span>رقم الهاف</span>
+      <input type="number" class="box">
+      <span>البريد الالكتروني</span>
+      <input type="email" class="box">
+      <span>رسالتك</span>
+      <textarea class="box" name="" id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="ارسل رساله" class="btn">
+    </form>
+  </div>
+  <!-- contact section ends-->
+
+
+<!-- footer section  -->
+  <section class="footer">
+    <div class="box-container">
+
+      <div class="box">
+        <h3>روابط مختصرة</h3>
+        <a href="#home"> <i class="fas fa-arrow-right"></i> الرئيسية</a>
+        <a href="#shop"> <i class="fas fa-arrow-right"></i> المتجر</a>
+        <a href="#about"> <i class="fas fa-arrow-right"></i> نبذه عنا</a>
+        <a href="#team"> <i class="fas fa-arrow-right"></i> الفريق</a>
+        <a href="#blog"> <i class="fas fa-arrow-right"></i> المدونه</a>
+        <a href="#contact"> <i class="fas fa-arrow-right"></i> اتصل بنا</a>
+      </div>
+
+      <div class="box">
+        <h3>روابط اخري</h3>
+        <a href="#"> <i class="fas fa-arrow-right"></i> طلبي </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> قائمه المهام</a>
+        <a href="#"> <i class="fas fa-arrow-right"></i>حسابي</a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> المفضله</a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> شروط المستخدم</a>
+      </div>
+
+      <div class="box">
+        <h3>تواصل الاجتماعي</h3>
+        <a href="#"> <i class="fab fa-facebook-f"></i> فيس بوك</a>
+        <a href="#"> <i class="fab fa-twitter"></i> تويتر</a>
+        <a href="#"> <i class="fab fa-instagram"></i> انستجرام</a>
+        <a href="#"> <i class="fab fa-linkedin"></i>لينكدان</a>
+        <a href="#"> <i class="fab fa-pinterest"></i> بينتيريست</a>
+      </div>
+
+      <div class="box">
+        <h3>الرساله الاخباريه</h3>
+        <p>انضم للحصول على آخر التحديثات</p>
+        <form action="">
+          <input type="email" name="" id="" placeholder="ادخل بريدك الالكتروني">
+          <input type="submit" value="انضم الينا" class="btn">
+        </form>
+      </div>
+
+    </div>
+  </section>
+  <!-- custom js file link -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
